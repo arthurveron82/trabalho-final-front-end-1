@@ -1,0 +1,211 @@
+/* Reset e Configurações Universais */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: 'Inter', sans-serif;
+
+    line-height: 1.6;
+
+    background-color: #fdfbf7;
+
+    color: #333;
+
+}
+
+/* Seletores de Agrupamento */
+
+h1, h2, h3 {
+
+    font-family: 'Playfair Display', serif;
+
+    color: #4b3621;
+
+    margin-bottom: 15px;
+
+}
+
+/* Estilização da classe do Logótipo */
+.logo {
+    width: 120px;         /* Largura do logótipo */
+    height: auto;         /* Mantém a proporção da imagem sem distorcer */
+    display: block;       /* Permite centralizar a imagem */
+    margin: 0 auto 15px auto; /* Centraliza horizontalmente e dá espaço para o título */
+}
+
+/* Estilização por ID */
+
+#topo {
+
+    scroll-behavior: smooth;
+
+}
+
+#hero img {
+
+    width: 100%;
+
+    height: 400px;
+
+    object-fit: cover;
+
+}
+
+/* Seletores de Classe */
+
+.container {
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+}
+
+.menu-principal {
+
+    list-style: none;
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+.menu-principal a {
+
+    text-decoration: none;
+
+    color: #6f4e37;
+
+    font-weight: bold;
+
+}
+
+.img-small {
+
+    width: 200px;
+
+    border-radius: 8px;
+
+    margin-top: 10px;
+
+}
+
+/* Estrutura Semântica (Elementos) */
+
+header {
+
+    background-color: #fff;
+
+    border-bottom: 2px solid #e0d7d0;
+
+    padding: 20px 0;
+
+    text-align: center;
+
+}
+
+header h1 {
+
+    font-size: 2.5rem;
+
+}
+
+section {
+
+    padding: 40px 20px;
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+}
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin: 20px 0;
+
+    background-color: #fff;
+
+}
+
+th, td {
+
+    border: 1px solid #e0d7d0;
+
+    padding: 12px;
+
+    text-align: left;
+
+}
+
+th {
+
+    background-color: #f9f6f2;
+
+}
+
+footer {
+
+    background-color: #4b3621;
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 30px;
+
+    margin-top: 40px;
+
+}
+
+footer a {
+
+    color: #d2b48c;
+
+    text-decoration: none;
+
+}
+
+/* Responsividade (Media Queries) */
+
+@media (max-width: 768px) {
+
+    .menu-principal {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 10px;
+
+    }
+
+    #hero img {
+
+        height: 250px;
+
+    }
+
+    h1 {
+
+        font-size: 1.8rem;
+
+    }
+
+}
